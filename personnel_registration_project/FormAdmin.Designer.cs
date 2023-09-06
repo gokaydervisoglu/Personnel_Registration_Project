@@ -51,22 +51,22 @@
             // 
             this.lblad.AutoSize = true;
             this.lblad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblad.Location = new System.Drawing.Point(12, 90);
+            this.lblad.Location = new System.Drawing.Point(26, 92);
             this.lblad.Name = "lblad";
-            this.lblad.Size = new System.Drawing.Size(165, 29);
+            this.lblad.Size = new System.Drawing.Size(151, 29);
             this.lblad.TabIndex = 1;
-            this.lblad.Text = "Kullanici Adi:";
+            this.lblad.Text = "User Name:";
             this.lblad.Click += new System.EventHandler(this.lblad_Click);
             // 
             // lblsifre
             // 
             this.lblsifre.AutoSize = true;
             this.lblsifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsifre.Location = new System.Drawing.Point(102, 129);
+            this.lblsifre.Location = new System.Drawing.Point(42, 131);
             this.lblsifre.Name = "lblsifre";
-            this.lblsifre.Size = new System.Drawing.Size(75, 29);
+            this.lblsifre.Size = new System.Drawing.Size(135, 29);
             this.lblsifre.TabIndex = 2;
-            this.lblsifre.Text = "Şifre:";
+            this.lblsifre.Text = "Password:";
             this.lblsifre.Click += new System.EventHandler(this.lblsifre_Click);
             // 
             // txtsifre
@@ -84,9 +84,9 @@
             this.btngiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btngiris.Location = new System.Drawing.Point(205, 174);
             this.btngiris.Name = "btngiris";
-            this.btngiris.Size = new System.Drawing.Size(136, 29);
+            this.btngiris.Size = new System.Drawing.Size(136, 44);
             this.btngiris.TabIndex = 4;
-            this.btngiris.Text = "Giriş";
+            this.btngiris.Text = "Login";
             this.btngiris.UseVisualStyleBackColor = true;
             this.btngiris.Click += new System.EventHandler(this.btngiris_Click);
             // 
@@ -97,29 +97,29 @@
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(32, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 38);
+            this.label1.Size = new System.Drawing.Size(306, 38);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Admin Giriş Paneli";
+            this.label1.Text = "Admin Login Panel";
             // 
             // btnhatirla
             // 
             this.btnhatirla.AutoSize = true;
-            this.btnhatirla.Location = new System.Drawing.Point(205, 235);
+            this.btnhatirla.Location = new System.Drawing.Point(205, 250);
             this.btnhatirla.Name = "btnhatirla";
-            this.btnhatirla.Size = new System.Drawing.Size(98, 20);
+            this.btnhatirla.Size = new System.Drawing.Size(119, 20);
             this.btnhatirla.TabIndex = 7;
-            this.btnhatirla.Text = "Beni Hatirla";
+            this.btnhatirla.Text = "Remember me";
             this.btnhatirla.UseVisualStyleBackColor = true;
             this.btnhatirla.CheckedChanged += new System.EventHandler(this.btnhatirla_CheckedChanged);
             // 
             // goster
             // 
             this.goster.AutoSize = true;
-            this.goster.Location = new System.Drawing.Point(205, 209);
+            this.goster.Location = new System.Drawing.Point(205, 224);
             this.goster.Name = "goster";
-            this.goster.Size = new System.Drawing.Size(112, 20);
+            this.goster.Size = new System.Drawing.Size(125, 20);
             this.goster.TabIndex = 8;
-            this.goster.Text = "Parola Göster";
+            this.goster.Text = "Password Show";
             this.goster.UseVisualStyleBackColor = true;
             this.goster.CheckedChanged += new System.EventHandler(this.goster_CheckedChanged);
             // 
@@ -127,6 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(408, 278);
             this.Controls.Add(this.goster);
@@ -137,8 +138,10 @@
             this.Controls.Add(this.lblsifre);
             this.Controls.Add(this.lblad);
             this.Controls.Add(this.txtad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormAdmin";
-            this.Text = "FormGiris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormLogin";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAdmin_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAdmin_FormClosed);
             this.ResumeLayout(false);

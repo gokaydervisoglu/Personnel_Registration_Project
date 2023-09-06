@@ -42,24 +42,24 @@
             this.personelVeriTabaniDataSet3 = new personnel_registration_project.PersonelVeriTabaniDataSet3();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btngrafik = new System.Windows.Forms.Button();
-            this.btnist = new System.Windows.Forms.Button();
-            this.btntemizlik = new System.Windows.Forms.Button();
-            this.btnlistele = new System.Windows.Forms.Button();
+            this.btn_gr = new System.Windows.Forms.Button();
+            this.btn_sta = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_list = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxsehir = new System.Windows.Forms.ComboBox();
+            this.combo_city = new System.Windows.Forms.ComboBox();
             this.labelmeslek = new System.Windows.Forms.Label();
-            this.txtmeslek = new System.Windows.Forms.MaskedTextBox();
+            this.txtjob = new System.Windows.Forms.MaskedTextBox();
             this.labeldurum = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.labelmaas = new System.Windows.Forms.Label();
-            this.txtmaas = new System.Windows.Forms.MaskedTextBox();
+            this.txtsalary = new System.Windows.Forms.MaskedTextBox();
             this.labelsehir = new System.Windows.Forms.Label();
             this.labelsoyad = new System.Windows.Forms.Label();
-            this.txtsoyad = new System.Windows.Forms.MaskedTextBox();
+            this.txtsurname = new System.Windows.Forms.MaskedTextBox();
             this.labelad = new System.Windows.Forms.Label();
-            this.txtad = new System.Windows.Forms.MaskedTextBox();
+            this.txtname = new System.Windows.Forms.MaskedTextBox();
             this.labelid = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.MaskedTextBox();
             this.tbl_PersonelTableAdapter = new personnel_registration_project.PersonelVeriTabaniDataSet3TableAdapters.Tbl_PersonelTableAdapter();
@@ -193,10 +193,10 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btngrafik);
-            this.groupBox2.Controls.Add(this.btnist);
-            this.groupBox2.Controls.Add(this.btntemizlik);
-            this.groupBox2.Controls.Add(this.btnlistele);
+            this.groupBox2.Controls.Add(this.btn_gr);
+            this.groupBox2.Controls.Add(this.btn_sta);
+            this.groupBox2.Controls.Add(this.btn_clear);
+            this.groupBox2.Controls.Add(this.btn_list);
             this.groupBox2.Location = new System.Drawing.Point(671, 15);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
@@ -204,71 +204,71 @@
             this.groupBox2.Size = new System.Drawing.Size(312, 409);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "İşlemler";
+            this.groupBox2.Text = "Transactions";
             // 
-            // btngrafik
+            // btn_gr
             // 
-            this.btngrafik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btngrafik.Location = new System.Drawing.Point(30, 280);
-            this.btngrafik.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btngrafik.Name = "btngrafik";
-            this.btngrafik.Size = new System.Drawing.Size(254, 55);
-            this.btngrafik.TabIndex = 14;
-            this.btngrafik.Text = "Grafikler";
-            this.btngrafik.UseVisualStyleBackColor = true;
-            this.btngrafik.Click += new System.EventHandler(this.btngrafik_Click);
+            this.btn_gr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gr.Location = new System.Drawing.Point(30, 280);
+            this.btn_gr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_gr.Name = "btn_gr";
+            this.btn_gr.Size = new System.Drawing.Size(254, 55);
+            this.btn_gr.TabIndex = 14;
+            this.btn_gr.Text = "Graphics";
+            this.btn_gr.UseVisualStyleBackColor = true;
+            this.btn_gr.Click += new System.EventHandler(this.btngrafik_Click);
             // 
-            // btnist
+            // btn_sta
             // 
-            this.btnist.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnist.Location = new System.Drawing.Point(30, 206);
-            this.btnist.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnist.Name = "btnist";
-            this.btnist.Size = new System.Drawing.Size(254, 55);
-            this.btnist.TabIndex = 13;
-            this.btnist.Text = "İstatistik";
-            this.btnist.UseVisualStyleBackColor = true;
-            this.btnist.Click += new System.EventHandler(this.btnist_Click);
+            this.btn_sta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sta.Location = new System.Drawing.Point(30, 206);
+            this.btn_sta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_sta.Name = "btn_sta";
+            this.btn_sta.Size = new System.Drawing.Size(254, 55);
+            this.btn_sta.TabIndex = 13;
+            this.btn_sta.Text = "Statistics";
+            this.btn_sta.UseVisualStyleBackColor = true;
+            this.btn_sta.Click += new System.EventHandler(this.btnist_Click);
             // 
-            // btntemizlik
+            // btn_clear
             // 
-            this.btntemizlik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntemizlik.Location = new System.Drawing.Point(30, 137);
-            this.btntemizlik.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btntemizlik.Name = "btntemizlik";
-            this.btntemizlik.Size = new System.Drawing.Size(254, 55);
-            this.btntemizlik.TabIndex = 12;
-            this.btntemizlik.Text = "Temizle";
-            this.btntemizlik.UseVisualStyleBackColor = true;
-            this.btntemizlik.Click += new System.EventHandler(this.btntemizlik_Click);
+            this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.Location = new System.Drawing.Point(30, 137);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(254, 55);
+            this.btn_clear.TabIndex = 12;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btntemizlik_Click);
             // 
-            // btnlistele
+            // btn_list
             // 
-            this.btnlistele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlistele.Location = new System.Drawing.Point(30, 61);
-            this.btnlistele.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnlistele.Name = "btnlistele";
-            this.btnlistele.Size = new System.Drawing.Size(254, 55);
-            this.btnlistele.TabIndex = 8;
-            this.btnlistele.Text = "Listele";
-            this.btnlistele.UseVisualStyleBackColor = true;
-            this.btnlistele.Click += new System.EventHandler(this.btnlistele_Click);
+            this.btn_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_list.Location = new System.Drawing.Point(30, 61);
+            this.btn_list.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_list.Name = "btn_list";
+            this.btn_list.Size = new System.Drawing.Size(254, 55);
+            this.btn_list.TabIndex = 8;
+            this.btn_list.Text = "List";
+            this.btn_list.UseVisualStyleBackColor = true;
+            this.btn_list.Click += new System.EventHandler(this.btnlistele_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBoxsehir);
+            this.groupBox1.Controls.Add(this.combo_city);
             this.groupBox1.Controls.Add(this.labelmeslek);
-            this.groupBox1.Controls.Add(this.txtmeslek);
+            this.groupBox1.Controls.Add(this.txtjob);
             this.groupBox1.Controls.Add(this.labeldurum);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.labelmaas);
-            this.groupBox1.Controls.Add(this.txtmaas);
+            this.groupBox1.Controls.Add(this.txtsalary);
             this.groupBox1.Controls.Add(this.labelsehir);
             this.groupBox1.Controls.Add(this.labelsoyad);
-            this.groupBox1.Controls.Add(this.txtsoyad);
+            this.groupBox1.Controls.Add(this.txtsurname);
             this.groupBox1.Controls.Add(this.labelad);
-            this.groupBox1.Controls.Add(this.txtad);
+            this.groupBox1.Controls.Add(this.txtname);
             this.groupBox1.Controls.Add(this.labelid);
             this.groupBox1.Controls.Add(this.txtid);
             this.groupBox1.Location = new System.Drawing.Point(12, 15);
@@ -278,13 +278,13 @@
             this.groupBox1.Size = new System.Drawing.Size(574, 409);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Personel Arama";
+            this.groupBox1.Text = "Personel Panel";
             // 
-            // comboBoxsehir
+            // combo_city
             // 
-            this.comboBoxsehir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxsehir.FormattingEnabled = true;
-            this.comboBoxsehir.Items.AddRange(new object[] {
+            this.combo_city.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_city.FormattingEnabled = true;
+            this.combo_city.Items.AddRange(new object[] {
             "Adana",
             "Adıyaman",
             "Afyonkarahisar",
@@ -366,11 +366,11 @@
             "Kilis",
             "Osmaniye",
             "Düzce"});
-            this.comboBoxsehir.Location = new System.Drawing.Point(254, 188);
-            this.comboBoxsehir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBoxsehir.Name = "comboBoxsehir";
-            this.comboBoxsehir.Size = new System.Drawing.Size(222, 28);
-            this.comboBoxsehir.TabIndex = 3;
+            this.combo_city.Location = new System.Drawing.Point(254, 188);
+            this.combo_city.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.combo_city.Name = "combo_city";
+            this.combo_city.Size = new System.Drawing.Size(222, 28);
+            this.combo_city.TabIndex = 3;
             // 
             // labelmeslek
             // 
@@ -378,18 +378,18 @@
             this.labelmeslek.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelmeslek.Location = new System.Drawing.Point(40, 318);
             this.labelmeslek.Name = "labelmeslek";
-            this.labelmeslek.Size = new System.Drawing.Size(78, 22);
+            this.labelmeslek.Size = new System.Drawing.Size(48, 22);
             this.labelmeslek.TabIndex = 14;
-            this.labelmeslek.Text = "Meslek:";
+            this.labelmeslek.Text = "Job:";
             // 
-            // txtmeslek
+            // txtjob
             // 
-            this.txtmeslek.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmeslek.Location = new System.Drawing.Point(254, 318);
-            this.txtmeslek.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtmeslek.Name = "txtmeslek";
-            this.txtmeslek.Size = new System.Drawing.Size(222, 28);
-            this.txtmeslek.TabIndex = 7;
+            this.txtjob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtjob.Location = new System.Drawing.Point(254, 318);
+            this.txtjob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtjob.Name = "txtjob";
+            this.txtjob.Size = new System.Drawing.Size(222, 28);
+            this.txtjob.TabIndex = 7;
             // 
             // labeldurum
             // 
@@ -397,9 +397,9 @@
             this.labeldurum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeldurum.Location = new System.Drawing.Point(40, 272);
             this.labeldurum.Name = "labeldurum";
-            this.labeldurum.Size = new System.Drawing.Size(74, 22);
+            this.labeldurum.Size = new System.Drawing.Size(73, 22);
             this.labeldurum.TabIndex = 12;
-            this.labeldurum.Text = "Durum:";
+            this.labeldurum.Text = "Status:";
             // 
             // radioButton2
             // 
@@ -408,9 +408,9 @@
             this.radioButton2.Location = new System.Drawing.Point(366, 276);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 24);
+            this.radioButton2.Size = new System.Drawing.Size(76, 24);
             this.radioButton2.TabIndex = 6;
-            this.radioButton2.Text = "Bekar";
+            this.radioButton2.Text = "Single";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -420,9 +420,9 @@
             this.radioButton1.Location = new System.Drawing.Point(268, 276);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(57, 24);
+            this.radioButton1.Size = new System.Drawing.Size(87, 24);
             this.radioButton1.TabIndex = 5;
-            this.radioButton1.Text = "Evli";
+            this.radioButton1.Text = "Married";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // labelmaas
@@ -431,20 +431,20 @@
             this.labelmaas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelmaas.Location = new System.Drawing.Point(40, 226);
             this.labelmaas.Name = "labelmaas";
-            this.labelmaas.Size = new System.Drawing.Size(63, 22);
+            this.labelmaas.Size = new System.Drawing.Size(73, 22);
             this.labelmaas.TabIndex = 9;
-            this.labelmaas.Text = "Maaş:";
+            this.labelmaas.Text = "Salary:";
             // 
-            // txtmaas
+            // txtsalary
             // 
-            this.txtmaas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmaas.Location = new System.Drawing.Point(254, 226);
-            this.txtmaas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtmaas.Mask = "000000";
-            this.txtmaas.Name = "txtmaas";
-            this.txtmaas.Size = new System.Drawing.Size(222, 28);
-            this.txtmaas.TabIndex = 4;
-            this.txtmaas.ValidatingType = typeof(int);
+            this.txtsalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsalary.Location = new System.Drawing.Point(254, 226);
+            this.txtsalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtsalary.Mask = "000000";
+            this.txtsalary.Name = "txtsalary";
+            this.txtsalary.Size = new System.Drawing.Size(222, 28);
+            this.txtsalary.TabIndex = 4;
+            this.txtsalary.ValidatingType = typeof(int);
             // 
             // labelsehir
             // 
@@ -452,9 +452,9 @@
             this.labelsehir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelsehir.Location = new System.Drawing.Point(40, 188);
             this.labelsehir.Name = "labelsehir";
-            this.labelsehir.Size = new System.Drawing.Size(63, 22);
+            this.labelsehir.Size = new System.Drawing.Size(51, 22);
             this.labelsehir.TabIndex = 7;
-            this.labelsehir.Text = "Şehir:";
+            this.labelsehir.Text = "City:";
             // 
             // labelsoyad
             // 
@@ -462,18 +462,18 @@
             this.labelsoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelsoyad.Location = new System.Drawing.Point(40, 150);
             this.labelsoyad.Name = "labelsoyad";
-            this.labelsoyad.Size = new System.Drawing.Size(72, 22);
+            this.labelsoyad.Size = new System.Drawing.Size(95, 22);
             this.labelsoyad.TabIndex = 5;
-            this.labelsoyad.Text = "Soyad:";
+            this.labelsoyad.Text = "Surname:";
             // 
-            // txtsoyad
+            // txtsurname
             // 
-            this.txtsoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsoyad.Location = new System.Drawing.Point(254, 150);
-            this.txtsoyad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtsoyad.Name = "txtsoyad";
-            this.txtsoyad.Size = new System.Drawing.Size(222, 28);
-            this.txtsoyad.TabIndex = 2;
+            this.txtsurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsurname.Location = new System.Drawing.Point(254, 150);
+            this.txtsurname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtsurname.Name = "txtsurname";
+            this.txtsurname.Size = new System.Drawing.Size(222, 28);
+            this.txtsurname.TabIndex = 2;
             // 
             // labelad
             // 
@@ -481,18 +481,18 @@
             this.labelad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelad.Location = new System.Drawing.Point(40, 112);
             this.labelad.Name = "labelad";
-            this.labelad.Size = new System.Drawing.Size(125, 22);
+            this.labelad.Size = new System.Drawing.Size(152, 22);
             this.labelad.TabIndex = 3;
-            this.labelad.Text = "Personel Ad:";
+            this.labelad.Text = "Personel Name:";
             // 
-            // txtad
+            // txtname
             // 
-            this.txtad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtad.Location = new System.Drawing.Point(254, 112);
-            this.txtad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtad.Name = "txtad";
-            this.txtad.Size = new System.Drawing.Size(222, 28);
-            this.txtad.TabIndex = 1;
+            this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.Location = new System.Drawing.Point(254, 112);
+            this.txtname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(222, 28);
+            this.txtname.TabIndex = 1;
             // 
             // labelid
             // 
@@ -519,7 +519,7 @@
             // 
             this.tbl_PersonelTableAdapter.ClearBeforeFill = true;
             // 
-            // FormAnaPer
+            // FormMainStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -527,7 +527,8 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FormAnaPer";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "FormMainStaff";
             this.Text = "FormAnaPer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAnaPer_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAnaPer_FormClosed);
@@ -549,24 +550,24 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btngrafik;
-        private System.Windows.Forms.Button btnist;
-        private System.Windows.Forms.Button btntemizlik;
-        private System.Windows.Forms.Button btnlistele;
+        private System.Windows.Forms.Button btn_gr;
+        private System.Windows.Forms.Button btn_sta;
+        private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button btn_list;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBoxsehir;
+        private System.Windows.Forms.ComboBox combo_city;
         private System.Windows.Forms.Label labelmeslek;
-        private System.Windows.Forms.MaskedTextBox txtmeslek;
+        private System.Windows.Forms.MaskedTextBox txtjob;
         private System.Windows.Forms.Label labeldurum;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label labelmaas;
-        private System.Windows.Forms.MaskedTextBox txtmaas;
+        private System.Windows.Forms.MaskedTextBox txtsalary;
         private System.Windows.Forms.Label labelsehir;
         private System.Windows.Forms.Label labelsoyad;
-        private System.Windows.Forms.MaskedTextBox txtsoyad;
+        private System.Windows.Forms.MaskedTextBox txtsurname;
         private System.Windows.Forms.Label labelad;
-        private System.Windows.Forms.MaskedTextBox txtad;
+        private System.Windows.Forms.MaskedTextBox txtname;
         private System.Windows.Forms.Label labelid;
         private System.Windows.Forms.MaskedTextBox txtid;
         private System.Windows.Forms.DataGridView dataGridView2;

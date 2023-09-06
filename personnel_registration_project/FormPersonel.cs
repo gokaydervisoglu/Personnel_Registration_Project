@@ -12,14 +12,14 @@ using System.IO;
 
 namespace personnel_registration_project
 {
-    public partial class FormStaff : Form
+    public partial class FormPersonel : Form
     {
         public bool key;
 
         private FormMain formana;
 
         SqlConnection sql = new SqlConnection("Data Source=DESKTOP-3HN2204\\SQLEXPRESS;Initial Catalog=PersonelVeriTabani;Integrated Security=True");
-        public FormStaff()
+        public FormPersonel()
         {
             InitializeComponent();
             this.Load += FormGiris_Load;

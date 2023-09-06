@@ -50,11 +50,11 @@ namespace personnel_registration_project
 
         private void btntemizlik_Click(object sender, EventArgs e)
         {
-            txtad.Clear();
-            txtmaas.Clear();
-            txtsoyad.Clear();
-            txtmeslek.Clear();
-            comboBoxsehir.Text = "";
+            txtname.Clear();
+            txtsalary.Clear();
+            txtsurname.Clear();
+            txtjob.Clear();
+            combo_city.Text = "";
             radioButton1.Checked = false; radioButton2.Checked = false;
         }
 
@@ -141,7 +141,7 @@ namespace personnel_registration_project
 
         private void FormAnaPer_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FormStaff formPersonel = Application.OpenForms["FormPersonel"] as FormStaff;
+            FormPersonel formPersonel = Application.OpenForms["FormPersonel"] as FormPersonel;
             if (formPersonel != null)
             {
                 formPersonel.Focus();

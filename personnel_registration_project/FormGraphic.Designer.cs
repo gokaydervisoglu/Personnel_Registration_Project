@@ -114,18 +114,21 @@
             this.grfmeslek.Size = new System.Drawing.Size(398, 242);
             this.grfmeslek.TabIndex = 3;
             // 
-            // FormGrafikler
+            // FormGraphic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(802, 487);
             this.Controls.Add(this.grfmeslek);
             this.Controls.Add(this.grfortmaas);
             this.Controls.Add(this.grfdurum);
             this.Controls.Add(this.grfsehir);
-            this.Name = "FormGrafikler";
-            this.Text = "FormGrafikler";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "FormGraphic";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FormGraphics";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGrafikler_FormClosed);
             this.Load += new System.EventHandler(this.FormGrafikler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grfsehir)).EndInit();

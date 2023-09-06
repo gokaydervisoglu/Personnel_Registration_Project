@@ -16,7 +16,7 @@ namespace personnel_registration_project
         public Boolean key2 = false;
 
         private FormAdmin formadmin;
-        private FormStaff formpersonel;
+        private FormPersonel formpersonel;
         
         public FormLogin()
         {
@@ -24,7 +24,7 @@ namespace personnel_registration_project
             formadmin = new FormAdmin();
             formadmin.FormClosed += FormAdmin_FormClosedEvent;
 
-            formpersonel = new FormStaff();
+            formpersonel = new FormPersonel();
             formpersonel.FormClosed += FormPersonel_FormClosedEvent;
         }
 
@@ -37,7 +37,7 @@ namespace personnel_registration_project
                 formadmin.Focus();
             }
 
-            FormStaff formPersonel = Application.OpenForms["FormPersonel"] as FormStaff;
+            FormPersonel formPersonel = Application.OpenForms["FormPersonel"] as FormPersonel;
 
             if (formPersonel != null)
             {
@@ -83,7 +83,7 @@ namespace personnel_registration_project
                 this.Hide();
             }
 
-            FormStaff formPersonel = Application.OpenForms["FormPersonel"] as FormStaff;
+            FormPersonel formPersonel = Application.OpenForms["FormPersonel"] as FormPersonel;
 
             if (formPersonel != null)
             {
@@ -100,7 +100,7 @@ namespace personnel_registration_project
 
             if (formPersonel == null || formPersonel.IsDisposed)
             {
-                formPersonel = new FormStaff();
+                formPersonel = new FormPersonel();
                 formPersonel.FormClosed += FormPersonel_FormClosedEvent;
                 //key = false;
             }

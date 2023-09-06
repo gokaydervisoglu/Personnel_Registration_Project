@@ -186,6 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(606, 349);
             this.ContextMenuStrip = this.contextMenuStrip1;
@@ -201,7 +202,9 @@
             this.Controls.Add(this.tblbekar);
             this.Controls.Add(this.tblevli);
             this.Controls.Add(this.tblper);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormSta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personnel Statistics";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormIst_FormClosed);
             this.Load += new System.EventHandler(this.FormIst_Load);

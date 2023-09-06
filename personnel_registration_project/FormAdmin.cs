@@ -39,15 +39,6 @@ namespace personnel_registration_project
 
         private void FormGiris_Load(object sender, EventArgs e)
         {
-            /*
-            FormAna formana = Application.OpenForms["FormAna"] as FormAna;
-
-            if (formana != null)
-            {
-                this.Show();
-            }
-            */
-
             keyrd();
 
             if (key) 

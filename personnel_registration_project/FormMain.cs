@@ -22,7 +22,7 @@ namespace personnel_registration_project
         private FormSta formIst;
         private FormGraphic formGrf;
         private FormAdmin formadmin;
-        private FormStaff formpersonel;
+        private FormPersonel formpersonel;
 
         public FormMain()
         {
@@ -61,11 +61,11 @@ namespace personnel_registration_project
 
         private void btntemizlik_Click(object sender, EventArgs e)
         {
-            txtad.Clear();
-            txtmaas.Clear();
-            txtsoyad.Clear();
-            txtmeslek.Clear();
-            comboBoxsehir.Text = "";
+            txtname.Clear();
+            txtsalary.Clear();
+            txtsurname.Clear();
+            txtjob.Clear();
+            combo_city.Text = "";
             radioButton1.Checked = false; radioButton2.Checked = false;
            
         }
@@ -75,17 +75,17 @@ namespace personnel_registration_project
             sql.Open();
             SqlCommand cmd = new SqlCommand("insert into Tbl_Personel (PerAd,PerSoyad,PerSehir,PerMaas,PerMeslek,PerDurum) values (@p1,@p2,@p3,@p4,@p5,@p6)",sql);
 
-            if(txtad.Text == "" || txtsoyad.Text == "" || comboBoxsehir.Text == "" || txtmaas.Text == "" || txtmeslek.Text == "")
+            if(txtname.Text == "" || txtsurname.Text == "" || combo_city.Text == "" || txtsalary.Text == "" || txtjob.Text == "")
             {
                 MessageBox.Show("Lütfen Bilgilerin Tamamını Giriniz");
             }
             else
             {
-                cmd.Parameters.AddWithValue("@p1", txtad.Text);
-                cmd.Parameters.AddWithValue("@p2", txtsoyad.Text);
-                cmd.Parameters.AddWithValue("@p3", comboBoxsehir.Text);
-                cmd.Parameters.AddWithValue("@p4", txtmaas.Text);
-                cmd.Parameters.AddWithValue("@p5", txtmeslek.Text);
+                cmd.Parameters.AddWithValue("@p1", txtname.Text);
+                cmd.Parameters.AddWithValue("@p2", txtsurname.Text);
+                cmd.Parameters.AddWithValue("@p3", combo_city.Text);
+                cmd.Parameters.AddWithValue("@p4", txtsalary.Text);
+                cmd.Parameters.AddWithValue("@p5", txtjob.Text);
 
                 if (radioButton1.Checked == true)
                 {
@@ -112,10 +112,10 @@ namespace personnel_registration_project
             int selected = dataGridView1.SelectedCells[0].RowIndex;
             txtid.Text = dataGridView1.Rows[selected].Cells[0].Value.ToString();
 
-            txtad.Text = dataGridView1.Rows[selected].Cells[1].Value.ToString();
-            txtsoyad.Text = dataGridView1.Rows[selected].Cells[2].Value.ToString();
-            comboBoxsehir.Text = dataGridView1.Rows[selected].Cells[3].Value.ToString();
-            txtmaas.Text = dataGridView1.Rows[selected].Cells[4].Value.ToString();
+            txtname.Text = dataGridView1.Rows[selected].Cells[1].Value.ToString();
+            txtsurname.Text = dataGridView1.Rows[selected].Cells[2].Value.ToString();
+            combo_city.Text = dataGridView1.Rows[selected].Cells[3].Value.ToString();
+            txtsalary.Text = dataGridView1.Rows[selected].Cells[4].Value.ToString();
 
             
 
@@ -131,7 +131,7 @@ namespace personnel_registration_project
                 radioButton2.Checked = true;
             }
 
-            txtmeslek.Text = dataGridView1.Rows[selected].Cells[6].Value.ToString();
+            txtjob.Text = dataGridView1.Rows[selected].Cells[6].Value.ToString();
 
         }
 
@@ -168,11 +168,11 @@ namespace personnel_registration_project
             else
             {
                 SqlCommand update = new SqlCommand("Update Tbl_Personel Set PerAd=@a1,PerSoyad=@a2,PerSehir=@a3,PerMaas=@a4,PerDurum=@a5,PerMeslek=@a7 where Perid=@a6",sql);
-                update.Parameters.AddWithValue("@a1", txtad.Text);
-                update.Parameters.AddWithValue("@a2", txtsoyad.Text);
-                update.Parameters.AddWithValue("@a3", comboBoxsehir.Text);
-                update.Parameters.AddWithValue("@a4", txtmaas.Text);
-                update.Parameters.AddWithValue("@a7", txtmeslek.Text);
+                update.Parameters.AddWithValue("@a1", txtname.Text);
+                update.Parameters.AddWithValue("@a2", txtsurname.Text);
+                update.Parameters.AddWithValue("@a3", combo_city.Text);
+                update.Parameters.AddWithValue("@a4", txtsalary.Text);
+                update.Parameters.AddWithValue("@a7", txtjob.Text);
                 
                 update.Parameters.AddWithValue("@a6", txtid.Text);
 
@@ -289,7 +289,7 @@ namespace personnel_registration_project
                 formGrs.Show();
             }
 
-            FormStaff formPersonel = Application.OpenForms["FormPersonel"] as FormStaff;
+            FormPersonel formPersonel = Application.OpenForms["FormPersonel"] as FormPersonel;
             if (formPersonel != null)
             {
                 formPersonel.Focus();
